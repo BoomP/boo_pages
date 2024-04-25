@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery figcaption {
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>欢迎加入群聊</h1>
+    <p style="color: #666666"> 注意群内不要随意发广告或无关内容哦！会被踢出群聊并禁止再加入！😊 </p>
+    <div class="gallery">
+        <figure>
+            <img src="../../static/qrCode/qun/qun_1.jpg" alt="闲置物品转让群">
+            <figcaption>🎁 家中闲置物品堆积如山？加入我们的闲置物品转让群，让每一件物品都找到它的新主人，实现资源循环利用！</figcaption>
+        </figure>
+        <figure>
+            <img src="../../static/qrCode/qun/qun_2.jpg" alt="母婴群">
+            <figcaption>👶 宝妈宝爸们，这里有专业的育儿知识和经验分享，还有一群同样身份的家长，一起交流育儿心得，共同成长！</figcaption>
+        </figure>
+        <figure>
+            <img src="../../static/qrCode/qun/qun_3.jpg" alt="求职招聘群">
+            <figcaption>💼 无论你是正在寻找工作的求职者，还是急需招聘人才的企业，这里都是你实现求职梦想或人才招募的理想平台！</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../../static/qrCode/qun/qun_4.jpg" alt="互助群">
+            <figcaption>🤝 生活中的小麻烦总是让人头疼，但别担心，我们的互助群里有众多热心肠的朋友，随时准备伸出援手，与你共度难关！</figcaption>
+        </figure>
+        <figure>
+            <img src="../../static/qrCode/qun/qun_5.jpg" alt="薅羊毛群">
+            <figcaption>💰 想要发现更多超值优惠、免费福利？快来加入我们的薅羊毛群，一起分享省钱秘籍，享受更多实惠！</figcaption>
+        </figure>
+        <figure>
+            <img src="../../static/qrCode/qun/qun_10.jpg" alt="闲置物品转让群">
+            <figcaption>🎁 家中闲置物品堆积如山？加入我们的闲置物品转让群，让每一件物品都找到它的新主人，实现资源循环利用！</figcaption>
+        </figure>
+    </div>
+
+    <h3>小助手</h3>
+    <div class="gallery">
+        <figure>
+            <img src="../../static/qrCode/wx/Boo.jpg" alt="Boo">
+            <figcaption> 😊 群满或者二维码失效可以加这个微信，拉你进群哦！😊 </figcaption>
+        </figure>
+    </div>
+</div>
+</body>
+</html>
